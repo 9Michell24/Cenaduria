@@ -77,8 +77,10 @@
 
                                         <nav class="headermenu leftmenu" id="headnav" role="navigation">
                                             <ul>
-                                                <li><a href="carritoCompras.jsp">Carrito</a></li>
-                                                <li><a>Hola <%= usuario%></a></li>
+                                                <li><a href="carritoCompras.jsp">Carrito</a></li>                                                
+                                                <li><a href="index.jsp">Cerrar sesión</a></li>
+                                                <li><a href="eliminarUsuario.jsp">Eliminar mi cuenta</a></li>
+                                                <li><a><%= usuario%></a></li>
                                             </ul>
                                         </nav>
 

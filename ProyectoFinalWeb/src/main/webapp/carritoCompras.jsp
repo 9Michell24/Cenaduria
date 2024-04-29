@@ -85,7 +85,7 @@
                                         <nav class="headermenu leftmenu" id="headnav" role="navigation">
                                             <ul>
                                                 <li><a href="menu.jsp">Regresar al menú</a></li>
-                                                <li><a>Hola <%= usuario%></a></li>
+                                                <li><a><%= usuario%></a></li>
                                             </ul>
                                         </nav>
 
