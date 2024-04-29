@@ -1,0 +1,11 @@
+controlador\Conexion.class
+controlador\Consultas.class
+com\mycompany\proyectofinalweb\JakartaRestConfiguration.class
+modelo\Compra.class
+servlets\InicioSesion.class
+servlets\RegistrarUsuarios.class
+modelo\Producto.class
+modelo\Carrito.class
+modelo\Usuario.class
+com\mycompany\proyectofinalweb\resources\JakartaEE10Resource.class
+modelo\Articulo.class

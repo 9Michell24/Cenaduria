@@ -1,0 +1,153 @@
+29-Apr-2024 00:55:06.557 WARNING [http-nio-8080-exec-13] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ProyectoFinalWeb] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+29-Apr-2024 00:55:06.558 WARNING [http-nio-8080-exec-13] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ProyectoFinalWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@18.0.1.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.1.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.1.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.1.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.1.1/java.lang.Thread.run(Thread.java:833)
+29-Apr-2024 00:55:07.075 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ProyectoFinalWeb]
+29-Apr-2024 00:55:08.279 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1373)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:971)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+29-Apr-2024 01:03:36.199 INFO [http-nio-8080-exec-23] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml]
+29-Apr-2024 01:03:36.201 WARNING [http-nio-8080-exec-23] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProyectoFinalWeb] in deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml] has been ignored
+29-Apr-2024 01:03:36.556 INFO [http-nio-8080-exec-23] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+29-Apr-2024 01:03:36.560 INFO [http-nio-8080-exec-23] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml] has finished in [361] ms
+29-Apr-2024 01:03:36.563 INFO [http-nio-8080-exec-24] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ProyectoFinalWeb]] after start() had already been called. The second call will be ignored.
+29-Apr-2024 01:52:18.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.1.20
+29-Apr-2024 01:52:18.265 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Mar 19 2024 12:49:58 UTC
+29-Apr-2024 01:52:18.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.1.20.0
+29-Apr-2024 01:52:18.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+29-Apr-2024 01:52:18.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+29-Apr-2024 01:52:18.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+29-Apr-2024 01:52:18.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-18.0.1.1
+29-Apr-2024 01:52:18.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       18.0.1.1+2-6
+29-Apr-2024 01:52:18.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+29-Apr-2024 01:52:18.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20
+29-Apr-2024 01:52:18.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20
+29-Apr-2024 01:52:18.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\logging.properties
+29-Apr-2024 01:52:18.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Apr-2024 01:52:18.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dhttp.nonProxyHosts=localhost|127.0.0.1|HpMichelle
+29-Apr-2024 01:52:18.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+29-Apr-2024 01:52:18.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Apr-2024 01:52:18.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Apr-2024 01:52:18.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+29-Apr-2024 01:52:18.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+29-Apr-2024 01:52:18.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Apr-2024 01:52:18.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Apr-2024 01:52:18.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20
+29-Apr-2024 01:52:18.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20
+29-Apr-2024 01:52:18.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\temp
+29-Apr-2024 01:52:18.344 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.7] con la versión APR [1.7.4].
+29-Apr-2024 01:52:18.352 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.13 30 Jan 2024]
+29-Apr-2024 01:52:18.865 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+29-Apr-2024 01:52:18.914 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [899] milliseconds
+29-Apr-2024 01:52:19.028 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+29-Apr-2024 01:52:19.028 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+29-Apr-2024 01:52:19.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml]
+29-Apr-2024 01:52:19.075 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/PracticaLogin] in deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml] has been ignored
+29-Apr-2024 01:52:19.149 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error durante el despliegue del descriptor de configuración [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:530)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:421)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@3e78b6a5]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4565)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4698)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\Yeisi\Documents\NetBeansProjects\PracticaLogin\target\PracticaLogin-1.0-SNAPSHOT] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+29-Apr-2024 01:52:19.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml] has finished in [129] ms
+29-Apr-2024 01:52:19.183 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml]
+29-Apr-2024 01:52:19.183 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProyectoFinalWeb] in deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml] has been ignored
+29-Apr-2024 01:52:21.614 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+29-Apr-2024 01:52:21.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml] has finished in [2.573] ms
+29-Apr-2024 01:52:21.765 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\docs] de la aplicación web
+29-Apr-2024 01:52:21.824 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\docs] has finished in [59] ms
+29-Apr-2024 01:52:21.824 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\examples] de la aplicación web
+29-Apr-2024 01:52:22.443 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\examples] has finished in [618] ms
+29-Apr-2024 01:52:22.443 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\host-manager] de la aplicación web
+29-Apr-2024 01:52:22.516 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\host-manager] has finished in [73] ms
+29-Apr-2024 01:52:22.517 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\manager] de la aplicación web
+29-Apr-2024 01:52:22.579 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\manager] has finished in [62] ms
+29-Apr-2024 01:52:22.580 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\ROOT] de la aplicación web
+29-Apr-2024 01:52:22.630 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\ROOT] has finished in [51] ms
+29-Apr-2024 01:52:22.638 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Apr-2024 01:52:22.738 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3821] milliseconds
+29-Apr-2024 01:52:27.493 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ProyectoFinalWeb]
+29-Apr-2024 01:52:27.568 INFO [http-nio-8080-exec-8] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml]
+29-Apr-2024 01:52:27.575 WARNING [http-nio-8080-exec-8] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProyectoFinalWeb] in deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml] has been ignored
+29-Apr-2024 01:52:29.205 INFO [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+29-Apr-2024 01:52:29.210 INFO [http-nio-8080-exec-8] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml] has finished in [1.642] ms
+29-Apr-2024 01:52:29.215 INFO [http-nio-8080-exec-6] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ProyectoFinalWeb]] after start() had already been called. The second call will be ignored.
+29-Apr-2024 02:02:19.988 WARNING [http-nio-8080-exec-18] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ProyectoFinalWeb] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+29-Apr-2024 02:02:19.988 WARNING [http-nio-8080-exec-18] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ProyectoFinalWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@18.0.1.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.1.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.1.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.1.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.1.1/java.lang.Thread.run(Thread.java:833)
+29-Apr-2024 02:02:20.496 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ProyectoFinalWeb]
+29-Apr-2024 02:02:20.545 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml]
+29-Apr-2024 02:02:20.548 WARNING [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ProyectoFinalWeb] in deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml] has been ignored
+29-Apr-2024 02:02:22.945 INFO [http-nio-8080-exec-13] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+29-Apr-2024 02:02:22.950 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\miche\Downloads\UltimoProyectoWeb\ProyectoFinalWeb\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\ProyectoFinalWeb.xml] has finished in [2.405] ms
+29-Apr-2024 02:02:22.953 INFO [http-nio-8080-exec-14] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ProyectoFinalWeb]] after start() had already been called. The second call will be ignored.
+29-Apr-2024 02:02:24.002 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1373)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:971)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)

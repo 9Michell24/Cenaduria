@@ -1,0 +1,69 @@
+23-Apr-2024 22:05:25.361 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.1.20
+23-Apr-2024 22:05:25.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Mar 19 2024 12:49:58 UTC
+23-Apr-2024 22:05:25.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.1.20.0
+23-Apr-2024 22:05:25.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+23-Apr-2024 22:05:25.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+23-Apr-2024 22:05:25.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+23-Apr-2024 22:05:25.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         D:\Java\jdk-22
+23-Apr-2024 22:05:25.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       22+36-2370
+23-Apr-2024 22:05:25.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+23-Apr-2024 22:05:25.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20
+23-Apr-2024 22:05:25.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20
+23-Apr-2024 22:05:25.382 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\logging.properties
+23-Apr-2024 22:05:25.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Apr-2024 22:05:25.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+23-Apr-2024 22:05:25.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Apr-2024 22:05:25.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+23-Apr-2024 22:05:25.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+23-Apr-2024 22:05:25.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+23-Apr-2024 22:05:25.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+23-Apr-2024 22:05:25.385 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+23-Apr-2024 22:05:25.386 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20
+23-Apr-2024 22:05:25.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20
+23-Apr-2024 22:05:25.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\temp
+23-Apr-2024 22:05:25.427 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.7] con la versión APR [1.7.4].
+23-Apr-2024 22:05:25.457 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.13 30 Jan 2024]
+23-Apr-2024 22:05:25.891 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+23-Apr-2024 22:05:25.971 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1010] milliseconds
+23-Apr-2024 22:05:26.253 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+23-Apr-2024 22:05:26.253 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+23-Apr-2024 22:05:26.266 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml]
+23-Apr-2024 22:05:26.341 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/PracticaLogin] in deployment descriptor [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml] has been ignored
+23-Apr-2024 22:05:27.676 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+23-Apr-2024 22:05:27.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml] has finished in [1.506] ms
+23-Apr-2024 22:05:27.777 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\docs] de la aplicación web
+23-Apr-2024 22:05:27.855 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\docs] has finished in [78] ms
+23-Apr-2024 22:05:27.856 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\examples] de la aplicación web
+23-Apr-2024 22:05:29.663 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\examples] has finished in [1.806] ms
+23-Apr-2024 22:05:29.663 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\host-manager] de la aplicación web
+23-Apr-2024 22:05:29.793 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\host-manager] has finished in [130] ms
+23-Apr-2024 22:05:29.794 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\manager] de la aplicación web
+23-Apr-2024 22:05:30.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\manager] has finished in [212] ms
+23-Apr-2024 22:05:30.006 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\ROOT] de la aplicación web
+23-Apr-2024 22:05:30.103 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\webapps\ROOT] has finished in [97] ms
+23-Apr-2024 22:05:30.118 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+23-Apr-2024 22:05:30.324 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4344] milliseconds
+23-Apr-2024 22:05:33.581 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/PracticaLogin]
+23-Apr-2024 22:05:33.662 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml]
+23-Apr-2024 22:05:33.664 WARNING [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/PracticaLogin] in deployment descriptor [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml] has been ignored
+23-Apr-2024 22:05:34.234 INFO [http-nio-8080-exec-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+23-Apr-2024 22:05:34.238 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Yeisi\Downloads\apache-tomcat-10.1.20-windows-x64\apache-tomcat-10.1.20\conf\Catalina\localhost\PracticaLogin.xml] has finished in [576] ms
+23-Apr-2024 22:05:34.242 INFO [http-nio-8080-exec-4] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PracticaLogin]] after start() had already been called. The second call will be ignored.
+23-Apr-2024 22:11:29.676 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+23-Apr-2024 22:11:29.677 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Apr-2024 22:11:29.679 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+23-Apr-2024 22:11:29.698 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [PracticaLogin] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+23-Apr-2024 22:11:29.699 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [PracticaLogin] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+23-Apr-2024 22:11:29.724 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-Apr-2024 22:11:29.739 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
