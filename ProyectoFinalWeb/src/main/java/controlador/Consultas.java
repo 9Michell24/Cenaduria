@@ -84,5 +84,39 @@ public class Consultas extends Conexion{
         }
         return false;
     }
+     public boolean eliminarUsuarios(String nombre) {
+        PreparedStatement pst = null;
+        try {
+
+            String consulta = "DELETE FROM usuarios WHERE nombre = ?";
+            pst = getConexion().prepareStatement(consulta);
+            pst.setString(1, nombre);
+
+            if (pst.executeUpdate() == 1) {
+//                consulta = "DELETE FROM usuarios WHERE id_usuario = ?";
+//                pst = con.getConexion().prepareStatement(consulta);
+//                pst.setInt(1, id_usuario);
+//                if (pst.executeUpdate() == 1) {
+//                    return true;
+//                }
+                return true;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error en: " + e);
+        } finally {
+            try {
+                if (getConexion() != null) {
+                    getConexion().close();
+                }
+                if (pst != null) {
+                    pst.close();
+                }
+            } catch (Exception e) {
+                System.out.println("Error en: " + e);
+            }
+        }
+        return false;
+    }
     
 }

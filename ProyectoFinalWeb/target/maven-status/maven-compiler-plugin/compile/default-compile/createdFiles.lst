@@ -1,13 +1,16 @@
 controlador\Consultas.class
 servlets\RegistrarUsuarios.class
 com\mycompany\proyectofinalweb\resources\JakartaEE10Resource.class
+servlets\ElimnarUsuarios.class
 controlador\Conexion.class
 persistencia\UsuarioJpaController.class
 com\mycompany\proyectofinalweb\JakartaRestConfiguration.class
 servlets\InicioSesion.class
 modelo\Producto.class
 persistencia\exceptions\NonexistentEntityException.class
+modelo\controladora2.class
 persistencia\exceptions\PreexistingEntityException.class
 modelo\Usuario.class
+persistencia\ControladoraPersistencia2.class
 persistencia\exceptions\IllegalOrphanException.class
 modelo\Articulo.class
