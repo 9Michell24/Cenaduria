@@ -116,7 +116,12 @@
                         <h6>Antojitos</h6>
                         <h5>Gordita</h5>
                         <p>Precio: $38</p>
-                        <button class="buy-button">Añadir</button>
+                        <form action="agregarCarrito" method="post">                                
+                            <input type="hidden" name="id_producto" value="1">
+                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
                     </div>
 
 
@@ -125,7 +130,12 @@
                         <h6>Antojitos</h6>
                         <h5>Entomatadas (3 piezas)</h5>
                         <p>Precio: $100</p>
-                        <button class="buy-button">Añadir</button>
+                        <form action="agregarCarrito" method="post">                                
+                            <input type="hidden" name="id_producto" value="2">
+                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
                     </div>
 
 
@@ -134,7 +144,12 @@
                         <h6>Antojitos</h6>
                         <h5>Flauta</h5>
                         <p>Precio: $38</p>
-                        <button class="buy-button">Añadir</button>
+                        <form action="agregarCarrito" method="post">                                
+                            <input type="hidden" name="id_producto" value="3">
+                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
                     </div>
 
 
@@ -144,7 +159,12 @@
                         <h6>Antojitos</h6>
                         <h5>Enchiladas rojas (3 piezas)</h5>
                         <p>Precio: $100</p>
-                        <button class="buy-button">Añadir</button>
+                        <form action="agregarCarrito" method="post">                                
+                            <input type="hidden" name="id_producto" value="4">
+                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
                     </div>
 
 
@@ -154,7 +174,12 @@
                         <h6>De temporada</h6>
                         <h5>Tamal de elote</h5>
                         <p>Precio: $40</p>
-                        <button class="buy-button">Añadir</button>
+                        <form action="agregarCarrito" method="post">                                
+                            <input type="hidden" name="id_producto" value="5">
+                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
                     </div>
 
 
@@ -164,7 +189,12 @@
                         <h6>Antojitos</h6>
                         <h5>Chimichanga</h5>
                         <p>Precio: $65</p>
-                        <button class="buy-button">Añadir</button>
+                        <form action="agregarCarrito" method="post">                                
+                            <input type="hidden" name="id_producto" value="6">
+                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
                     </div>
 
                     <div class="item">
@@ -172,7 +202,12 @@
                         <h6>Caldos</h6>
                         <h5>Sopa de tortilla</h5>
                         <p>Precio: $80</p>
-                        <button class="buy-button">Añadir</button>
+                        <form action="agregarCarrito" method="post">                                
+                            <input type="hidden" name="id_producto" value="7">
+                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
                     </div>
 
 
@@ -182,7 +217,12 @@
                         <h6>Caldos</h6>
                         <h5>Pozole</h5>
                         <p>Precio: $120</p>
-                        <button class="buy-button">Añadir</button>
+                        <form action="agregarCarrito" method="post">                                
+                            <input type="hidden" name="id_producto" value="8">
+                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
                     </div>
 
 
@@ -192,7 +232,12 @@
                         <h6>Caldos</h6>
                         <h5>Menudo</h5>
                         <p>Precio: $120</p>
-                        <button class="buy-button">Añadir</button>
+                        <form action="agregarCarrito" method="post">                                
+                            <input type="hidden" name="id_producto" value="9">
+                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
                     </div>
 
                 </div>
