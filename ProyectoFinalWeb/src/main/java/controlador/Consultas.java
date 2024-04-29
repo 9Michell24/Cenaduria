@@ -118,5 +118,36 @@ public class Consultas extends Conexion{
         }
         return false;
     }
+     public boolean registrarArticulos(int id_producto, int cantidad) {
+        PreparedStatement pst = null;
+        try {
+            String consulta = "insert into articulos (id_producto,cantidad) values(?,?)";
+            pst = getConexion().prepareStatement(consulta);          
+            pst.setInt(1, id_producto);
+            pst.setInt(2, cantidad);
+            
+            
+
+            if (pst.executeUpdate() == 1) {
+                return true;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error en " + e);
+        } finally {
+            try {
+                if (getConexion() != null) {
+                    getConexion().close();
+                }
+                if (pst != null) {
+                    pst.close();
+                }
+            } catch (Exception e) {
+                System.out.println("Error en " + e);
+            }
+
+        }
+        return false;
+    }
     
 }

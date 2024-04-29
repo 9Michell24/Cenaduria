@@ -1,10 +1,11 @@
 controlador\Consultas.class
 servlets\RegistrarUsuarios.class
 com\mycompany\proyectofinalweb\resources\JakartaEE10Resource.class
-servlets\ElimnarUsuarios.class
+servlets\eliminarusuario.class
 controlador\Conexion.class
 persistencia\UsuarioJpaController.class
 com\mycompany\proyectofinalweb\JakartaRestConfiguration.class
+servlets\RegistrarArticulo.class
 servlets\InicioSesion.class
 modelo\Producto.class
 persistencia\exceptions\NonexistentEntityException.class
