@@ -99,21 +99,20 @@
 
                 <h3>Iniciar sesión</h3>
 
-                
+
                 <div class="contactform">
-                    
-                        <form id="iniciar" action="iniciar" method="post" onsubmit="return validateForm()">
-                            <input type="text" name="usuario" placeholder="Nombre de usuario*" required>
-                            <br clear="all" />
-                            <br clear="all" />
-                            <input type="password" name="pass" placeholder="Contraseña*" required>
-                            <br clear="all" />
-                            <input type="submit" value="Iniciar sesión">
-                        </form>
-                    
+
+                    <form id="iniciar" action="iniciar" method="post" onsubmit="return validateForm()">
+                        <input type="text" name="usuario" placeholder="Nombre de usuario*" required>
+                        <br clear="all" />
+                        <br clear="all" />
+                        <input type="password" name="pass" placeholder="Contraseña*" required>
+                        <br clear="all" />
+                        <input type="submit" value="Iniciar sesión">
+                    </form>
+
                 </div>
                 <h4>¿No tienes una cuenta?  <a href="registro.jsp">Registrar</a></h4>
-
             </div>
         </section>
 

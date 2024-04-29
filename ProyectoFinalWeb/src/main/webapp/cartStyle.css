@@ -49,7 +49,7 @@ body.disablescroll{
 }
 .container{
     width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 .container.psr{
     position: relative;
@@ -657,7 +657,42 @@ header.fixed .contact-info a{
 
 
 
+/* -- CARRITO STARTS-- */
+body{
+    margin-top:200px;
+    background: white;
+}
+.ui-w-40 {
+    width: 40px !important;
+    height: auto;
+}
 
+.card{
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);   
+    background: #a4ceac;
+    color:#000;
+    font-family:'Poppins';
+    margin-top: 100px;
+}
+
+.my-custom-margin {
+    margin-top: 70px; /* Ajusta según sea necesario */
+    margin-bottom: 30px; /* Ajusta según sea necesario */
+}
+
+.ui-product-color {
+    display: inline-block;
+    overflow: hidden;
+    margin: .144em;
+    width: .875rem;
+    height: .875rem;
+    border-radius: 5rem;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+    vertical-align: middle;
+    
+}
+/* -- CARRITO ENDS-- */
 
 
 
@@ -697,33 +732,3 @@ footer{
 }
 /* -- FOOTER ENDS -- */
 
-/* -- CARRITO STARTS-- */
-body{
-    margin-top:200px;
-    background: white;
-}
-.ui-w-40 {
-    width: 40px !important;
-    height: auto;
-}
-
-.card{
-    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);   
-    background: #a4ceac;
-    color:#000;
-    font-family:'Poppins';
-}
-
-.ui-product-color {
-    display: inline-block;
-    overflow: hidden;
-    margin: .144em;
-    width: .875rem;
-    height: .875rem;
-    border-radius: 10rem;
-    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
-    vertical-align: middle;
-    
-}
-/* -- CARRITO ENDS-- */
