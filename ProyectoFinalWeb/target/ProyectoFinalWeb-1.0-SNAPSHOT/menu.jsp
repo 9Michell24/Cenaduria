@@ -9,6 +9,8 @@
     String usuario=(String)objSesion.getAttribute("usuario");
     if(usuario.equals("")){
         response.sendRedirect("index.jsp");
+    }else if(usuario.equals("administrador")){
+        response.sendRedirect("admin.jsp");
     }
 %>
 <!DOCTYPE html>

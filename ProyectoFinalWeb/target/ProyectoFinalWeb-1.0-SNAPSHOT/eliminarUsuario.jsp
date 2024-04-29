@@ -1,7 +1,7 @@
 <%-- 
     Document   : elimminar
     Created on : 29 abr. 2024, 05:04:00
-    Author     : miche
+    Author     : michelle
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -10,6 +10,8 @@
     String usuario=(String)objSesion.getAttribute("usuario");
     if(usuario.equals("")){
         response.sendRedirect("index.jsp");
+    }else if(usuario.equals("administrador")){
+        response.sendRedirect("admin.jsp");
     }
 %>
 <!DOCTYPE html>
