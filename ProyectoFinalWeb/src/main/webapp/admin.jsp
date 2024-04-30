@@ -8,9 +8,7 @@
 <%
     HttpSession objSesion=request.getSession(false);
     String usuario=(String)objSesion.getAttribute("usuario");
-    if(usuario.equals("administrador")){
-        response.sendRedirect("admin.jsp");
-    }else if(usuario.equals("")){
+    if(usuario.equals("")){
         response.sendRedirect("index.jsp");
     }
 %>

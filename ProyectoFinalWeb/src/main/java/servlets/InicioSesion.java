@@ -34,18 +34,21 @@ public class InicioSesion extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        
-        String usuario=request.getParameter("usuario");
-        String pass=request.getParameter("pass");
-        
-        Consultas sql=new Consultas();
-        
+
+        String usuario = request.getParameter("usuario");
+        String pass = request.getParameter("pass");
+
+        Consultas sql = new Consultas();
+
         if (sql.autenticacion(usuario, pass)) {
-            HttpSession objSesion=request.getSession(true);
+            HttpSession objSesion = request.getSession(true);
             objSesion.setAttribute("usuario", usuario);
-            response.sendRedirect("menu.jsp");
-            
-        }else{
+            if (usuario.equals("administrador")) {
+                response.sendRedirect("admin.jsp");
+            } else {
+                response.sendRedirect("menu.jsp");
+            }
+        } else {
             response.sendRedirect("index.jsp");
         }
     }
