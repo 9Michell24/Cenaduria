@@ -4,38 +4,62 @@
  */
 package modelo;
 
+import java.io.InputStream;
+
 /**
  *
  * @author Yeisi
  */
 public class Producto {
-    private int id_producto;
-    private String nombre;
+    private int id;
+    private String nombres;
+    private InputStream foto;
+    private String descripcion;
     private double precio;
+    private int stock;
 
     public Producto() {
     }
 
-    public Producto(int id_producto, String nombre, double precio) {
-        this.id_producto = id_producto;
-        this.nombre = nombre;
+    public Producto(int id, String nombres, InputStream foto, String descripcion, double precio, int stock) {
+        this.id = id;
+        this.nombres = nombres;
+        this.foto = foto;
+        this.descripcion = descripcion;
         this.precio = precio;
+        this.stock = stock;
     }
 
-    public int getId_producto() {
-        return id_producto;
+    public int getId() {
+        return id;
     }
 
-    public void setId_producto(int id_producto) {
-        this.id_producto = id_producto;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombres() {
+        return nombres;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public InputStream getFoto() {
+        return foto;
+    }
+
+    public void setFoto(InputStream foto) {
+        this.foto = foto;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public double getPrecio() {
@@ -45,7 +69,16 @@ public class Producto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
     
     
+
     
 }

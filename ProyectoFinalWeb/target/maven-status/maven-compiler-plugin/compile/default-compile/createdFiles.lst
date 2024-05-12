@@ -1,5 +1,7 @@
+servlets\Controlador.class
 controlador\Consultas.class
 servlets\RegistrarUsuarios.class
+servlets\ControladorIMG.class
 com\mycompany\proyectofinalweb\resources\JakartaEE10Resource.class
 servlets\eliminarusuario.class
 controlador\Conexion.class
