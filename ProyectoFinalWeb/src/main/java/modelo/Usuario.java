@@ -19,14 +19,17 @@ public class Usuario implements Serializable {
     @Id
     @GeneratedValue (strategy=GenerationType.AUTO)
     private int id_usuario;
-    String nombre, contraseña;
+    String numTelefono,nombre,direccion,email, contraseña;
 
     public Usuario() {
     }
 
-    public Usuario(int id_usuario, String nombre, String contraseña) {
+    public Usuario(int id_usuario, String numTelefono, String nombre, String direccion, String email, String contraseña) {
         this.id_usuario = id_usuario;
+        this.numTelefono = numTelefono;
         this.nombre = nombre;
+        this.direccion = direccion;
+        this.email = email;
         this.contraseña = contraseña;
     }
 
@@ -38,12 +41,36 @@ public class Usuario implements Serializable {
         this.id_usuario = id_usuario;
     }
 
+    public String getNumTelefono() {
+        return numTelefono;
+    }
+
+    public void setNumTelefono(String numTelefono) {
+        this.numTelefono = numTelefono;
+    }
+
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getContraseña() {
@@ -53,7 +80,6 @@ public class Usuario implements Serializable {
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
-    
     
     
 }
