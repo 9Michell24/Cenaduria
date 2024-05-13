@@ -24,6 +24,7 @@ public class Consultas extends Conexion{
             pst.setString(1, nombre);
             pst.setString(2, pass);
             
+            
 
             rs = pst.executeQuery();
             if (rs.next()) {
@@ -53,14 +54,16 @@ public class Consultas extends Conexion{
         return false;
 
     }
-    public boolean registrar(String nombre, String pass) {
+    public boolean registrar(String NumTelefono, String nombre, String Direccion, String Email, String pass) {
         PreparedStatement pst = null;
         try {
-            String consulta = "insert into usuarios (nombre,pass) values(?,?)";
+            String consulta = "insert into usuarios (NumTelefono,nombre,Direccion,Email,pass) values(?,?,?,?,?)";
             pst = getConexion().prepareStatement(consulta);
-            pst.setString(1, nombre);
-            pst.setString(2, pass);
-            
+            pst.setString(1, NumTelefono);
+            pst.setString(2, nombre);
+            pst.setString(3, Direccion);
+            pst.setString(4, Email);
+            pst.setString(5, pass);
             
 
             if (pst.executeUpdate() == 1) {

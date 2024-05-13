@@ -102,11 +102,21 @@
                 
                 <div class="contactform">
                     
-                        <form id="registrar" action="nuevousuario" method="post" onsubmit="return validateForm()">
-                            <input type="text" name="usuario" placeholder="Nombre de usuario*" required>
+                    <form id="registrar" action="nuevousuario" method="post" <!-- onsubmit="return validateForm()" -->>
+                            <input type="text" name="NumTelefono" placeholder="Numero de telefono *" required>
+                            <br clear="all" />
+                            <br clear="all" />
+                            <input type="text" name="nombre" placeholder="Nombre*" required>
+                            <br clear="all" />
+                            <br clear="all" />
+                            <input type="text" name="Direccion" placeholder="Dirección*" required>
+                            <br clear="all" />
+                            <br clear="all" />
+                            <input type="text" name="Email" placeholder="Email*" required>
                             <br clear="all" />
                             <br clear="all" />
                             <input type="password" name="pass" placeholder="Contraseña*" required>
+                            <br clear="all" />
                             <br clear="all" />
                             <input type="submit" value="Registrarme">
                         </form>

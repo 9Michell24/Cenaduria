@@ -35,15 +35,15 @@ public class InicioSesion extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
-        String usuario = request.getParameter("usuario");
+        String nombre = request.getParameter("nombre");
         String pass = request.getParameter("pass");
 
         Consultas sql = new Consultas();
 
-        if (sql.autenticacion(usuario, pass)) {
+        if (sql.autenticacion(nombre, pass)) {
             HttpSession objSesion = request.getSession(true);
-            objSesion.setAttribute("usuario", usuario);
-            if (usuario.equals("administrador")) {
+            objSesion.setAttribute("nombre", nombre);
+            if (nombre.equals("administrador")) {
                 response.sendRedirect("admin.jsp");
             } else {
                 response.sendRedirect("menu.jsp");

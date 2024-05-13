@@ -5,9 +5,9 @@
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
-    HttpSession objSesion=request.getSession(false);
-    String usuario=(String)objSesion.getAttribute("usuario");
-    if(usuario.equals("")){
+    HttpSession objSesion=request.getSession();
+    String nombre=(String)objSesion.getAttribute("nombre");
+    if(nombre.equals("")){
         response.sendRedirect("index.jsp");
     }
 %>
@@ -82,7 +82,7 @@
                                                 <li><a href="carritoCompras.jsp"><i class="fas fa-cart-plus">(<label style="color: orange">${contador}</label>)</i>Carrito</a></li>                                                
                                                 <li><a href="index.jsp"></i>Cerrar sesión</a></li>
                                                 <li><a href="eliminarUsuario.jsp">Eliminar mi cuenta</a></li>
-                                                <li><a><%= usuario%></a></li>
+                                                <li><a><%= nombre%></a></li>
                                             </ul>
                                         </nav>
 

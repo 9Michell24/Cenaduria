@@ -10,8 +10,10 @@ com\mycompany\proyectofinalweb\JakartaRestConfiguration.class
 servlets\RegistrarArticulo.class
 servlets\InicioSesion.class
 modelo\Producto.class
+modelo\Carrito.class
 persistencia\exceptions\NonexistentEntityException.class
 modelo\controladora2.class
+modelo\ProductoDAO.class
 persistencia\exceptions\PreexistingEntityException.class
 modelo\Usuario.class
 persistencia\ControladoraPersistencia2.class

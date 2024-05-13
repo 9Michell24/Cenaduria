@@ -34,12 +34,15 @@ public class RegistrarUsuarios extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         
-        String usuario=request.getParameter("usuario");
+        String NumTelefono=request.getParameter("NumTelefono");
+        String nombre=request.getParameter("nombre");
+        String Direccion=request.getParameter("Direccion");
+        String Email=request.getParameter("Email");
         String pass=request.getParameter("pass");
         
         Consultas sql=new Consultas();
-        if (sql.registrar(usuario, pass)) {
-            response.sendRedirect("menu.jsp");
+        if (sql.registrar(NumTelefono, nombre, Direccion, Email, pass)) {
+            response.sendRedirect("iniciarSesion.jsp");
         }else{
             response.sendRedirect("registro.jsp");
         }

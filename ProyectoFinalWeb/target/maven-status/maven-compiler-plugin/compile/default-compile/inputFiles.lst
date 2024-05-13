@@ -1,20 +1,21 @@
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\controlador\Consultas.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\controlador\Conexion.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\servlets\RegistrarUsuarios.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\com\mycompany\proyectofinalweb\resources\JakartaEE10Resource.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\servlets\ControladorIMG.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\servlets\eliminarusuario.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\persistencia\ControladoraPersistencia2.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\persistencia\exceptions\PreexistingEntityException.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\modelo\Usuario.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\modelo\Producto.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\servlets\Controlador.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\com\mycompany\proyectofinalweb\JakartaRestConfiguration.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\modelo\controladora2.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\servlets\InicioSesion.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\persistencia\exceptions\NonexistentEntityException.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\servlets\RegistrarArticulo.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\modelo\Articulo.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\persistencia\exceptions\IllegalOrphanException.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\persistencia\UsuarioJpaController.java
-C:\Users\PC\Desktop\Web Proyecto Final\ProyectoFinalWeb\src\main\java\modelo\ProductoDAO.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\controlador\Consultas.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\persistencia\UsuarioJpaController.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\servlets\InicioSesion.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\com\mycompany\proyectofinalweb\JakartaRestConfiguration.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\persistencia\exceptions\PreexistingEntityException.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\persistencia\ControladoraPersistencia2.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\servlets\RegistrarArticulo.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\modelo\Articulo.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\modelo\ProductoDAO.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\modelo\Producto.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\servlets\ControladorIMG.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\modelo\Carrito.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\modelo\controladora2.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\servlets\eliminarusuario.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\modelo\Usuario.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\servlets\RegistrarUsuarios.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\controlador\Conexion.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\persistencia\exceptions\NonexistentEntityException.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\com\mycompany\proyectofinalweb\resources\JakartaEE10Resource.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\servlets\Controlador.java
+C:\Users\Yeisi\Documents\Github\Cenaduria\ProyectoFinalWeb\src\main\java\persistencia\exceptions\IllegalOrphanException.java

@@ -103,7 +103,7 @@
                 <div class="contactform">
 
                     <form id="iniciar" action="iniciar" method="post" onsubmit="return validateForm()">
-                        <input type="text" name="usuario" placeholder="Nombre de usuario*" required>
+                        <input type="text" name="nombre" placeholder="Nombre de usuario*" required>
                         <br clear="all" />
                         <br clear="all" />
                         <input type="password" name="pass" placeholder="Contraseña*" required>

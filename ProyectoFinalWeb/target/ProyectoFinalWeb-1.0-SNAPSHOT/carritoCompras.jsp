@@ -6,9 +6,9 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
-    HttpSession objSesion=request.getSession(false);
-    String usuario=(String)objSesion.getAttribute("usuario");
-    if(usuario.equals("")){
+    HttpSession objSesion=request.getSession();
+    String nombre=(String)objSesion.getAttribute("nombre");
+    if(nombre.equals("")){
         response.sendRedirect("index.jsp");
     }
 %>
@@ -85,7 +85,7 @@
                                         <nav class="headermenu leftmenu" id="headnav" role="navigation">
                                             <ul>
                                                 <li><a href="menu.jsp">Regresar al menú</a></li>
-                                                <li><a><%= usuario%></a></li>
+                                                <li><a><%= nombre%></a></li>
                                             </ul>
                                         </nav>
 
