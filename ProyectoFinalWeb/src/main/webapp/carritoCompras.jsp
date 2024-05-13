@@ -3,7 +3,8 @@
     Created on : 28 abr. 2024, 20:29:16
     Author     : michelle
 --%>
-
+<%@ page import="modelo.Carrito" %>
+<%@ page import="java.util.List" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     HttpSession objSesion=request.getSession();
@@ -22,6 +23,7 @@
         <title> Cenadurí­a La Palmera </title>
         <link rel="icon" type="image/png" href="./images/logoPalmera.PNG">
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,10 +35,8 @@
         <!-- FONT ICONS -->
         <link rel="stylesheet" href="fonts/icons-linear.css">
         <link rel="stylesheet" href="fonts/icons-fontawesome/css/all.min.css">
-        <link rel="stylesheet" href="cartStyle.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-responsive.css">
 
 
 
@@ -45,7 +45,6 @@
         <script src="js/scripts.js"></script>
         <script src="contactform/contactform.js"></script>
         <script src="js/menuscript.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- comment -->
     </head>
     <body>
@@ -108,133 +107,112 @@
         </header>
         <!-- HEADER -->
 
-        <div class="container px-3 my-custom-margin clearfix">
-            <!-- Shopping cart table -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Carrito de compra</h2>
-                    <br clear="all" />
+        <br> <br> <br> <br>
+
+
+        <div class="container mt-4">
+            <h3>Carrito</h3>
+            <br>
+            <div class="row">
+                <div class="col-sm-8">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ITEM</th>
+                                <th>NOMBRES</th>
+                                <th>DESCRIPCION</th>
+                                <th>PRECIO</th>
+                                <th>CANT</th>
+                                <th>SUBTOTAL</th>
+                                <th>ACCION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (Carrito car : (List<Carrito>) request.getAttribute("carrito")) { %>
+                            <tr>
+                                <td><%= car.getItem() %></td>
+                                <td><%= car.getNombres() %></td>
+                                <td><%= car.getDescripcion() %>
+                                </td>
+                                <td><%= car.getPrecioCompra() %></td>
+                                <td><%= car.getCantidad() %>
+                                
+                                </td>
+                                <td><%= car.getSubTotal() %></td>
+                                <td>
+                                    <input type="hidden" id="idp" value="${car.getIdProducto()}">
+                                    <a href="Controlador?accion=Delete&idp=${car.getItem()}" id="btnDelete">Eliminar</a>
+                                    
+                                    
+                                </td>
+                            </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered m-0">
-                            <thead>
-                                <tr>
-                                    <!-- Set columns width -->
-                                    <th class="text-center py-3 px-4" style="min-width: 400px;">Nombre del platillo</th>
-                                    <th class="text-right py-3 px-4" style="width: 100px;">Precio</th>
-                                    <th class="text-center py-3 px-4" style="width: 120px;">Cantidad</th>
-                                    <th class="text-right py-3 px-4" style="width: 100px;">Total</th>
-                                    <th class="text-center align-middle py-3 px-0" style="width: 40px;"><a href="#" class="shop-tooltip float-none text-light" title="" data-original-title="Clear cart"><i class="ino ion-md-trash"></i></a></th>
-                                </tr>
-                            </thead>
-                            <tbody>
 
-                                <!-- ADAPTAR PARA QUE DESPLIEGUE LOS ARTICULOS DEL CARRITO-->
-                                <tr>
-                                    <td class="p-4">
-                                        <div class="media align-items-center">
-                                            <img src="images/gordita2.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt="">
-                                            <div class="media-body">
-                                                <a href="#" class="d-block text-dark">CHIMICHANGAS</a>                                               
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-right font-weight-semibold align-middle p-4">$38</td>
-                                    <td class="align-middle p-4"><input type="text" class="form-control text-center" value="1"></td>
-                                    <td class="text-right font-weight-semibold align-middle p-4">$38</td>
-                                    <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- / Shopping cart table -->
-
-                    <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
-                        <div class="mt-4">
-                            <label class="text-muted font-weight-normal">Subtotal: </label><strong>$31.92</strong>                             
-                            <div class="d-flex">
-                                <div class="text-right mt-4 mr-5">
-                                    <label class="text-muted font-weight-normal m-0">IVA:  </label><strong>$6.08</strong>                                
-                                    <div class="text-right mt-4">
-                                        <label class="text-muted font-weight-normal m-0">Total:  </label><strong>$38</strong>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="container mt-3">
-
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                                    Comprar
-                                </button>
-                            </div>
-
-                            <!-- The Modal -->
-                            <div class="modal fade" id="myModal">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Compra exitosa</h4>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                        </div>
-
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            Confirmación:
-                                        </div>
-
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Acepto</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3>Generar Compra</h3>
+                        </div >
+                        <div class="card-body">
+                            <label>Subtotal:</label>
+                            <input type="text" value="$${totalPagar}" readonly="" class="form-control" /> <br><br>
+                            <label>Descuento:</label>
+                            <input type="text" value="$0.00" readonly="" class="form-control" /> <br><br>
+                            <label>Total a Pagar:</label>
+                            <input type="text" value="$${totalPagar}" readonly="" class="form-control" />
+                        </div>
+                        <div class="card-footer  text-center">
+                            <a href="#" class="btn btn-info btn-block">Realizar Pago</a>
+                            <a href="#" class="btn btn-danger btn-block">Generar Compra</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <script>
-                    // Ventana modal
-                    var modal = document.getElementById("ventanaModal");
-                    // Botón que abre el modal
-                    var boton = document.getElementById("abrirModal");
-                    // Hace referencia al elemento <span> que tiene la X que cierra la ventana
-                    var span = document.getElementsByClassName("cerrar")[0];
+        <script>
+            // Ventana modal
+            var modal = document.getElementById("ventanaModal");
+            // Botón que abre el modal
+            var boton = document.getElementById("abrirModal");
+            // Hace referencia al elemento <span> que tiene la X que cierra la ventana
+            var span = document.getElementsByClassName("cerrar")[0];
 
-                    boton.addEventListener("click", function () {
-                        modal.style.display = "block";
-                    });
-                    // Si el usuario hace clic en la x, la ventana se cierra
-                    span.addEventListener("click", function () {
-                        modal.style.display = "none";
-                    });
-                    // Si el  usuario hace clic fuera de la ventana, se cierra.
-                    window.addEventListener("click", function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    });
-                </script>
-
-                <footer>
-                    <div class="container">
-
-
-                        <div class="copyright">
-                            Copyright &copy; <span id="copyrightyear"></span> Equipo Aplicaciones Web
-                        </div>
-
-                    </div>
-                </footer>
-                <!-- FOOTER -->
+            boton.addEventListener("click", function () {
+                modal.style.display = "block";
+            });
+            // Si el usuario hace clic en la x, la ventana se cierra
+            span.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+            // Si el  usuario hace clic fuera de la ventana, se cierra.
+            window.addEventListener("click", function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        </script>
 
 
-                </body>
-                </html>
+
+        <footer>
+            <div class="container">
+
+
+                <div class="copyright">
+                    Copyright &copy; <span id="copyrightyear"></span> Equipo Aplicaciones Web
+                </div>
+
+            </div>
+        </footer>
+        <!-- FOOTER -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js/funciones.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -100,6 +100,7 @@ public class ProductoDAO {
                 p.setPrecio(rs.getDouble(5));
                 p.setStock(rs.getInt(6));
                 
+                return p;
             }
         } catch (Exception e) {
         }

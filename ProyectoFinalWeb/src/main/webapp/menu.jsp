@@ -79,7 +79,11 @@
 
                                         <nav class="headermenu leftmenu" id="headnav" role="navigation">
                                             <ul>
-                                                <li><a href="carritoCompras.jsp"><i class="fas fa-cart-plus">(<label style="color: orange">${contador}</label>)</i>Carrito</a></li>                                                
+                                                <li>
+                                                    <a href="Controlador?accion=Carrito" method="GET">
+                                                        <i class=" fas fa-cart-plus">(<label style="color:orange ">${contador}</label>)</i>Carrito
+                                                    </a>
+                                                </li>                                                
                                                 <li><a href="index.jsp"></i>Cerrar sesión</a></li>
                                                 <li><a href="eliminarUsuario.jsp">Eliminar mi cuenta</a></li>
                                                 <li><a><%= nombre%></a></li>
@@ -120,18 +124,17 @@
                         <img src="images/gordita2.jpg" alt="">
                         <p>Con Frijol, Papa y Carne</p>
                         <p>Precio: $38</p>
-                        <form action="RegistrarArticulo" method="post">                                
-                            <input type="hidden" name="id_producto" value="1">
-                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
-                            <br clear="all" />
-                            <!-- <input type="submit" value="Agregar al carrito"> -->
-                            <div class = "card-footer text-center">
-                                <div>
-                                    <a href="Controlador?accion=AgregarCarrito&id=${p.getId()}" class = "btn btn-outline-info">Agregar a Carrito</a>
-                                    <a href="" class = "btn btn-danger">Comprar</a>
-                                </div>
+                        <div class = "card-footer text-center">
+                            <div>
+                                <a href="Controlador?accion=AgregarCarrito&id=7" method="GET" class = "btn btn-outline-info">
+                                    Agregar a Carrito
+                                </a>
+                                <a href="Controlador?accion=Comprar&id=7" method="GET" class = "btn btn-danger">
+                                    Comprar
+                                </a>
                             </div>
-                        </form>
+                        </div>
+
                     </div>
 
 
@@ -141,17 +144,14 @@
                         <img src="images/entomatadas.jpg" alt="">
                         <p>Rellenas de Panela</p>
                         <p>Precio: $100</p>
-                        <form action="RegistrarArticulo" method="post">                                
-                            <input type="hidden" name="id_producto" value="2">
-                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
-                            <br clear="all" />
-                            <div class = "card-footer text-center">
-                                <div>
-                                    <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
-                                    <a href="" class = "btn btn-danger">Comprar</a>
-                                </div>
+                        <div class = "card-footer text-center">
+                            <div>
+                                <a href="Controlador?accion=AgregarCarrito&id=8" method="GET" class = "btn btn-outline-info">Agregar a Carrito</a>
+                                <a href="Controlador?accion=Comprar&id=8" method="GET" class = "btn btn-danger">
+                                    Comprar
+                                </a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
 
@@ -161,17 +161,14 @@
                         <img src="images/flautas.jpg" alt="">
                         <p>Relleno de Papa y Carne</p>
                         <p>Precio: $38</p>
-                        <form action="RegistrarArticulo" method="post">                                
-                            <input type="hidden" name="id_producto" value="3">
-                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
-                            <br clear="all" />
-                            <div class = "card-footer text-center">
-                                <div>
-                                    <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
-                                    <a href="" class = "btn btn-danger">Comprar</a>
-                                </div>
+                        <div class = "card-footer text-center">
+                            <div>
+                                <a href="Controlador?accion=AgregarCarrito&id=9" method="GET" class = "btn btn-outline-info">Agregar a Carrito</a>
+                                <a href="Controlador?accion=Comprar&id=9" method="GET" class = "btn btn-danger">
+                                    Comprar
+                                </a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
 
@@ -182,17 +179,12 @@
                         <img src="images/enchiladas.jpg" alt="">
                         <p>Rellenas de Panela</p>
                         <p>Precio: $100</p>
-                        <form action="RegistrarArticulo" method="post">                                
-                            <input type="hidden" name="id_producto" value="4">
-                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
-                            <br clear="all" />
-                            <div class = "card-footer text-center">
-                                <div>
-                                    <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
-                                    <a href="" class = "btn btn-danger">Comprar</a>
-                                </div>
+                       <div class = "card-footer text-center">
+                            <div>
+                                <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
+                                <a href="" class = "btn btn-danger">Comprar</a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
 
@@ -203,17 +195,12 @@
                         <img src="images/tamalDeElote.jpg" alt="">
                         <p>Elote Dulce</p>
                         <p>Precio: $40</p>
-                        <form action="RegistrarArticulo" method="post">                                
-                            <input type="hidden" name="id_producto" value="5">
-                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
-                            <br clear="all" />
-                            <div class = "card-footer text-center">
-                                <div>
-                                    <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
-                                    <a href="" class = "btn btn-danger">Comprar</a>
-                                </div>
+                        <div class = "card-footer text-center">
+                            <div>
+                                <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
+                                <a href="" class = "btn btn-danger">Comprar</a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
 
@@ -224,17 +211,12 @@
                         <img src="images/chimichanga.jpg" alt=""> 
                         <p>Relleno de Papa y Carne</p>
                         <p>Precio: $65</p>
-                        <form action="RegistrarArticulo" method="post">                                
-                            <input type="hidden" name="id_producto" value="6">
-                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
-                            <br clear="all" />
-                            <div class = "card-footer text-center">
-                                <div>
-                                    <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
-                                    <a href="" class = "btn btn-danger">Comprar</a>
-                                </div>
+                        <div class = "card-footer text-center">
+                            <div>
+                                <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
+                                <a href="" class = "btn btn-danger">Comprar</a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                     <div class="item">
@@ -243,17 +225,12 @@
                         <img src="images/sopaDeTortilla.jpg" alt=""> 
                         <p>Consome de Res con Queso chihuaha y Panela</p>
                         <p>Precio: $80</p>
-                        <form action="RegistrarArticulo" method="post">                                
-                            <input type="hidden" name="id_producto" value="7">
-                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
-                            <br clear="all" />
-                            <div class = "card-footer text-center">
-                                <div>
-                                    <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
-                                    <a href="" class = "btn btn-danger">Comprar</a>
-                                </div>
+                        <div class = "card-footer text-center">
+                            <div>
+                                <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
+                                <a href="" class = "btn btn-danger">Comprar</a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
 
@@ -264,17 +241,12 @@
                         <img src="images/pozole.jpg" alt="">
                         <p>Pozole de Puerco</p>
                         <p>Precio: $120</p>
-                        <form action="RegistrarArticulo" method="post">                                
-                            <input type="hidden" name="id_producto" value="8">
-                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
-                            <br clear="all" />
-                            <div class = "card-footer text-center">
-                                <div>
-                                    <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
-                                    <a href="" class = "btn btn-danger">Comprar</a>
-                                </div>
+                        <div class = "card-footer text-center">
+                            <div>
+                                <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
+                                <a href="" class = "btn btn-danger">Comprar</a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
 
@@ -285,17 +257,12 @@
                         <img src="images/menudo.jpg" alt="">
                         <p>Menudo de Res</p>
                         <p>Precio: $120</p>
-                        <form action="RegistrarArticulo" method="post">                                
-                            <input type="hidden" name="id_producto" value="9">
-                            <input type="text" name="cantidad" placeholder="Cantidad*" required>
-                            <br clear="all" />
-                            <div class = "card-footer text-center">
-                                <div>
-                                    <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
-                                    <a href="" class = "btn btn-danger">Comprar</a>
-                                </div>
+                        <div class = "card-footer text-center">
+                            <div>
+                                <a href="" class = "btn btn-outline-info">Agregar a Carrito</a>
+                                <a href="" class = "btn btn-danger">Comprar</a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                 </div>

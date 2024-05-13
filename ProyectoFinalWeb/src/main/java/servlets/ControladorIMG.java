@@ -10,13 +10,14 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import modelo.ProductoDAO;
 
 /**
  *
  * @author PC
  */
 public class ControladorIMG extends HttpServlet {
-
+    ProductoDAO pdao = new ProductoDAO();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -43,7 +44,6 @@ public class ControladorIMG extends HttpServlet {
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -55,7 +55,8 @@ public class ControladorIMG extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        int id = Integer.parseInt(request.getParameter("id"));
+        pdao.ListarImg(id, response);
     }
 
     /**
